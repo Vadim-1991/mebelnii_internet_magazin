@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+}
+
+@font-face {
+    font-family: 'ClashDisplay', sans-serif;
+    src: url('../fonts/ClashDisplay.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Satoshi', sans-serif;
+    src: url('../fonts/SatoshiRegular.ttf');
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1386px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header_title {
+    font-size: 24px;
+    font-family: 'ClashDisplay', sans-serif;
+    color: #22202E;
+}
+
+.personal_account {
+    margin-left: 16px
+}
+
+.menu {
+    padding: 20px 0;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
+
+.menu_list_item a {
+    font-size: 16px;
+    color: #726E8D;
+}
+
+.furniture_brand {
+    margin: 60px 0;
+    position: relative;
+}
+
+.furniture_brand .container {
+    background-color: #2A254B;
+    min-height: 584px;
+}
+
+.furniture_brand_title {
+    padding: 60px 0 0 60px;
+    font-size: 32px;
+    line-height: 140%;
+    max-width: 500px;
+    color: #fff;
+}
+
+button {
+    border: 0;
+    font-size: 16px;
+    color: #fff;
+    width: 170px;
+    height: 56px;
+    margin: 41px 0 0 60px;
+    background: rgba(249, 249, 249, 0.15);
+}
+
+.furniture_brand p {
+    margin: 196px 0 60px 60px;
+    max-width: 563px;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF
+}
+
+.furniture_brand_img {
+    max-width: 520px;
+    min-height: 584px;
+    position: absolute;
+    top: 0;
+    right: 119px;
+}
+
+.furniture_brand_img img {
+    max-width: 100%;
+}
+
+.brand_differences {
+    padding: 60px 0 86px 0;
+}
+
+.brand_differences_title {
+    font-size: 24px;
+    color: #2A254B;
+    font-family: 'ClashDisplay', sans-serif;
+    text-align: center;
+}
+
+.brand_differences_block {
+    margin-top: 51px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand_differences_block_item {
+    max-width: 270px;
+}
+
+.brand_differences_block_item_title {
+    margin-top: 16px;
+    font-size: 20px;
+    color: #2A254B;
+    max-width: 205px;
+    font-family: 'ClashDisplay', sans-serif;
+}
+
+.brand_differences_block_item_description {
+    margin-top: 8px;
+    max-width: 266px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2A254B;
+}
+
+.collection {
+    padding: 80px 0 56px 0;
+}
+
+.collection_title {
+    font-size: 32px;
+    color: #2A254B;
+    font-family: ClashDisplay, sans-serif;
+}
+
+.collection_block {
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection_block_title {
+    margin-top: 24px;
+    font-size: 20px;
+    color: #2A254B;
+    font-family: ClashDisplay, sans-serif;
+}
+
+.collection_block_price {
+    margin-top: 8px;
+}
+
+.collection_button button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+    background: #F9F9F9;
+    color: #2A254B;
+
+}
+
+.collection_popular_products {
+    padding: 64px 0 48px 0;
+}
+
+.collection_popular_products_title {
+    font-size: 32px;
+    color: #2A254B;
+    font-family: ClashDisplay, sans-serif;
+}
+
+.collection_popular_products_block {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collection_popular_products_block_title {
+    margin-top: 24px;
+    font-size: 20px;
+    color: #2A254B;
+    font-family: ClashDisplay, sans-serif;
+}
+
+.collection_popular_products_block_price {
+    margin-top: 8px;
+}
+
+.collection_popular_products_button button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 44px;
+    background: #F9F9F9;
+    color: #2A254B;
+}
+
+.join_club {
+    background: #F9F9F9;
+}
+
+.join_club_block {
+    padding: 68px 0 54px 0;
+    opacity: 1;
+}
+
+.join_club_title {
+    font-size: 36px;
+    text-align: center;
+    color: #2A254B;
+    font-weight: 400;
+    font-family: ClashDisplay, sans-serif;
+}
+
+.join_club_description {
+    margin: 0 auto;
+    margin-top: 16px;
+    max-width: 470px;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #2A254B;
+}
+
+.input_button {
+    display: block;
+    margin: 0 auto;
+}
+
+.join_club_input {
+    margin: 0 auto;
+    margin: 72px 0 54px 0;
+    width: 472px;
+    border: 0;
+    background-color: #F9F9F9;
+}
+
+.join_club_input::placeholder {
+    padding: 17px 0 17px 32px;
+    border: 0;
+    font-size: 16px;
+    color: #2A254B;
+    opacity: 0.2;
+}
+
+.button_input {
+    margin-top: 72px;
+    width: 118px;
+    height: 56px;
+    background-color: #2A254B;
+}
