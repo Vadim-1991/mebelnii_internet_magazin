@@ -32,17 +32,33 @@ img {
     max-width: 100%;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%; /*что бы расширило на всю страницу*/
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
 .container {
-    max-width: 1280px;
+    max-width: 1300px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .header_container {
     display: flex;
     justify-content: space-between;
-    max-width: 1386px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 20px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -244,7 +260,7 @@ img {
 
 .join_club {
     background-color: #F9F9F9;;
-    padding: 52px 0 65px 0;
+    padding: 52px 74px 65px 93px;
 }
 
 .join_club_block {
