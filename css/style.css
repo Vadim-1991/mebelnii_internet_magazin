@@ -232,12 +232,14 @@ button {
 }
 
 .join_club {
-    background: #F9F9F9;
+    background-color: #F9F9F9;;
+    padding: 52px 0 65px 0;
 }
 
-.join_club_block {
+.join_club_block{
+    background-color: #FFFFFF;
     padding: 68px 0 54px 0;
-    opacity: 1;
+
 }
 
 .join_club_title {
@@ -258,17 +260,16 @@ button {
     color: #2A254B;
 }
 
-.input_button {
-    display: block;
-    margin: 0 auto;
+.input_button_block {
+    margin: 72px 0 54px 0;
+    text-align: center;
 }
 
 .join_club_input {
-    margin: 0 auto;
-    margin: 72px 0 54px 0;
     width: 472px;
     border: 0;
     background-color: #F9F9F9;
+    height: 56px;
 }
 
 .join_club_input::placeholder {
@@ -280,7 +281,7 @@ button {
 }
 
 .button_input {
-    margin-top: 72px;
+    margin-left: -5px;
     width: 118px;
     height: 56px;
     background-color: #2A254B;
