@@ -1,0 +1,164 @@
+@media (max-width: 1130px) {
+
+    .brand_differences_block {
+        gap: 40px;
+    }
+
+    .brand_differences_block_item_description {
+        max-width: 200px;
+    }
+
+
+    .footer_menu_malling_input_button_block input {
+        width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .brand_differences_block_item_description {
+        max-width: 200px;
+    }
+
+    .furniture .furniture_body a {
+        display: none;
+    }
+}
+
+@media (max-width: 885px) {
+    .brand_differences_block_item_description {
+        max-width: 170px;
+    }
+
+    .join_club_input {
+        width: 390px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .footer_menu_malling_input_button_block input {
+        width: 200px;
+    }
+
+    .furniture .furniture_img {
+        display: none;
+    }
+
+    .join_club_input {
+        width: 300px;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .menu {
+        display: none;
+    }
+
+    .header_container {
+        border-bottom: none;
+    }
+
+    .brand_differences_block {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .brand_differences_block_item_description {
+        max-width: 200px;
+    }
+
+    .collection_block {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .studio {
+        flex-direction: column;
+    }
+
+    .footer_menu {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    #categories {
+        order: -1;
+    }
+
+    #menu {
+        order: 3;
+    }
+
+    #our_company {
+        order: 4;
+    }
+
+    #malling_list {
+        order: 5;
+    }
+
+    .social_network_item {
+        display: none;
+    }
+
+    .footer_bottom {
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width: 630px) {
+
+    .join_club_input {
+        width: 220px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .collection_popular_products_block {
+        scroll-snap-type: x proximity;
+    }
+
+    .collection_popular_products_block_item {
+        scroll-snap-align: start;
+    }
+
+    .header_container {
+        flex-direction: row-reverse;
+    }
+
+    .shopping_cart_personal_account {
+        display: none;
+    }
+
+    .wrapper .main >.container {
+        padding: 0;
+    }
+
+    .join_club {
+        display: none;
+    }
+
+    .join_club_input {
+        width: 160px;
+    }
+
+    .button_input {
+        padding: 12px 24px;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .brand_differences_block {
+        justify-content: flex-start;
+    }
+
+    .brand_differences_block_item {
+        max-width: 375px;
+    }
+}

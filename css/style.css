@@ -48,7 +48,7 @@ body {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -192,8 +192,9 @@ body {
 
 .collection_block {
     margin-top: 33px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px   ;
 }
 
 .collection_block_title {
@@ -233,6 +234,7 @@ body {
     margin-top: 25px;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .collection_popular_products_block_title {
@@ -266,7 +268,6 @@ body {
 .join_club_block {
     background-color: #FFFFFF;
     padding: 68px 0 54px 0;
-
 }
 
 .join_club_title {
@@ -291,7 +292,6 @@ body {
     margin: 72px 0 54px 0;
     display: flex;
     justify-content: center;
-
 }
 
 .join_club_input {
@@ -338,8 +338,7 @@ body {
 }
 
 .studio_body_href {
-    padding-top: 196px;
-    text-align: left;
+    padding: 196px 0 54px 0;
 }
 
 .studio_body_href a {
