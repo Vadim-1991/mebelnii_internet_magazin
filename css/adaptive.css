@@ -8,7 +8,6 @@
         max-width: 200px;
     }
 
-
     .footer_menu_malling_input_button_block input {
         width: 300px;
     }
@@ -36,6 +35,12 @@
 }
 
 @media (max-width: 768px) {
+
+    .collection_popular_products_block{
+        scroll-snap-type:x mandatory;
+    }
+
+
     .footer_menu_malling_input_button_block input {
         width: 200px;
     }
@@ -78,7 +83,7 @@
 
     .footer_menu {
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content:space-between;
         gap: 30px;
     }
 
@@ -119,13 +124,9 @@
 
 @media (max-width: 576px) {
 
-    .collection_popular_products_block {
-        scroll-snap-type: x proximity;
-    }
-
-    .collection_popular_products_block_item {
-        scroll-snap-align: start;
-    }
+   .burger{
+       display: block;
+   }
 
     .header_container {
         flex-direction: row-reverse;
@@ -153,7 +154,7 @@
 
 }
 
-@media (max-width: 440px) {
+@media (max-width: 480px) {
     .brand_differences_block {
         justify-content: flex-start;
     }
