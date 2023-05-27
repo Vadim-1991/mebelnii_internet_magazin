@@ -123,7 +123,7 @@
 
 @media (max-width: 576px) {
 
-    #burger {
+    .burger {
         display: block;
     }
 
