@@ -523,13 +523,8 @@ body {
 }
 
 .burger{
-    visibility: hidden;
-}
-
-.burger{
     display: none;
 }
-
 
 
 

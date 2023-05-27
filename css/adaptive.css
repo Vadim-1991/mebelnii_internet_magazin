@@ -4,19 +4,12 @@
         gap: 40px;
     }
 
-    .brand_differences_block_item_description {
-        max-width: 200px;
-    }
-
     .footer_menu_malling_input_button_block input {
         width: 300px;
     }
 }
 
 @media (max-width: 992px) {
-    .brand_differences_block_item_description {
-        max-width: 200px;
-    }
 
     .furniture .furniture_body a {
         display: none;
@@ -24,9 +17,6 @@
 }
 
 @media (max-width: 885px) {
-    .brand_differences_block_item_description {
-        max-width: 170px;
-    }
 
     .join_club_input {
         width: 390px;
@@ -36,8 +26,19 @@
 
 @media (max-width: 768px) {
 
-    .collection_popular_products_block{
-        scroll-snap-type:x mandatory;
+    .collection_popular_products_block {
+        display: flex;
+        overflow: auto;
+        flex: none;
+        width: 100%;
+        scroll-snap-type: x proximity;
+        flex-flow: row nowrap;
+    }
+
+    .collection_popular_products_block_item {
+        scroll-snap-align: center;
+        width: 100%;
+        flex: none;
     }
 
 
@@ -66,11 +67,10 @@
 
     .brand_differences_block {
         flex-wrap: wrap;
-        justify-content: space-around;
     }
 
     .brand_differences_block_item_description {
-        max-width: 200px;
+        max-width: 376px;
     }
 
     .collection_block {
@@ -83,7 +83,7 @@
 
     .footer_menu {
         flex-wrap: wrap;
-        justify-content:space-between;
+        justify-content: space-between;
         gap: 30px;
     }
 
@@ -111,7 +111,6 @@
         justify-content: center;
     }
 
-
 }
 
 @media (max-width: 630px) {
@@ -124,9 +123,14 @@
 
 @media (max-width: 576px) {
 
-   .burger{
-       display: block;
-   }
+    #burger {
+        display: block;
+    }
+
+    .block_adaptive {
+        display: flex;
+        justify-content: space-between;
+    }
 
     .header_container {
         flex-direction: row-reverse;
@@ -136,7 +140,7 @@
         display: none;
     }
 
-    .wrapper .main >.container {
+    .wrapper .main > .container {
         padding: 0;
     }
 
@@ -161,5 +165,16 @@
 
     .brand_differences_block_item {
         max-width: 375px;
+    }
+}
+
+@media (max-width: 366px) {
+
+    .footer_menu_malling_input_button_block input {
+        width: 175px;
+    }
+
+    .malling_input_button_input {
+        padding: 12px 24px;
     }
 }
