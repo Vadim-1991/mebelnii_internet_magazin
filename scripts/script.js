@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.classList.remove('open')
                 menu.classList.remove('open')
             }
-           
-            
+
+
         })
     }
-    
+
 });

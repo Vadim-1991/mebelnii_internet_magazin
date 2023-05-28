@@ -1,0 +1,279 @@
+html {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'ClashDisplay', sans-serif;
+    src: url('../fonts/ClashDisplay.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Satoshi', sans-serif;
+    src: url('../fonts/SatoshiRegular.ttf');
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%; /*что бы расширило на всю страницу*/
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header_title {
+    font-size: 24px;
+    font-family: 'ClashDisplay', sans-serif;
+    color: #22202E;
+}
+
+.personal_account {
+    margin-left: 16px
+}
+
+.menu {
+    padding: 20px 0;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
+
+.menu_list_item a {
+    font-size: 16px;
+    color: #726E8D;
+}
+
+
+
+
+.footer {
+    background-color: #2A254B;
+    color: #FFFFFF;
+}
+
+.footer_menu {
+    display: flex;
+    padding: 58px 0 48px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #4E4D93;
+}
+
+.footer_menu_title {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: ClashDisplay, sans-serif;
+    color: #FFFFFF;
+}
+
+.footer_menu_title a {
+    color: #FFFFFF;
+}
+
+.footer_item {
+    font-size: 14px;
+    padding-top: 12px;
+}
+
+.footer_item a {
+    color: #FFFFFF;
+}
+
+.footer_menu_malling_input_button_block {
+    padding-top: 16px;
+    display: flex;
+}
+
+.footer_menu_malling_input_button_block input {
+    width: 627px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 17px 0 17px 32px;
+    border: 0;
+}
+
+.footer_menu_malling_input_button_block input::placeholder {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.malling_input_button_input {
+    background: #FFFFFF;
+    padding: 16px 32px;
+    font-size: 16px;
+    color: #2A254B;
+}
+
+.footer_bottom {
+    padding: 24px 0 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_network_item {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+/*Сам бургер и бургер меню*/
+
+.burger {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+}
+
+.burger:focus {
+    outline: none;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+.burger:active {
+    outline: none;
+    background: none;
+}
+
+.burger_line {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 3px;
+    transition: .3s;
+    display: block;
+}
+
+.burger_line:nth-child(1) {
+    top: 4px;
+    transform: translateY(-10px);
+}
+
+.burger_line:nth-child(3) {
+    bottom: 4px;
+    transform: translateY(10px)
+}
+
+.burger.open .burger_line:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.burger.open .burger_line:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.burger.open .burger_line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu_burger {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    transform: translateX(100%);
+    background-color: blueviolet;
+    padding: 75px 20px 20px 20px;
+    transition: transform .5s;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.menu__link {
+    font-size: 16px;
+}
+
+.menu__list {
+    display: block;
+}
+
+.menu__link {
+    color: white;
+    font-size: 21px;
+    display: block;
+    padding: 10px 0;
+}
+
+.menu_burger.open {
+    transform: translateX(0);
+}
+
+.burger {
+    display: none;
+}
+
+
+
+
+
+
