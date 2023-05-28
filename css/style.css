@@ -457,6 +457,7 @@ body {
     background-color: black;
     border-radius: 3px;
     transition: .3s;
+    display: block;
 }
 
 .burger_line:nth-child(1) {
@@ -483,9 +484,10 @@ body {
 
 .menu_burger {
     position: absolute;
-    left: -350px;
-    top: 0;
-    width: 350px;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    transform: translateX(100%);
     background-color: blueviolet;
     padding: 75px 20px 20px 20px;
     transition: transform .5s;
@@ -518,11 +520,11 @@ body {
     padding: 10px 0;
 }
 
-.burger.open .menu_burger{
-    transform: translateX(100%);
+.menu_burger.open {
+    transform: translateX(0);
 }
 
-.burger{
+.burger {
     display: none;
 }
 
