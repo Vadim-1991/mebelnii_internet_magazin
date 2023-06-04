@@ -102,6 +102,18 @@ body {
     color: #FFFFFF;
 }
 
+.select_block {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+select.select_item {
+    background: #F9F9F9;
+    padding: 16px 30px 16px 42px;
+}
+
 .all_products {
     max-width: 1460px;
     padding: 36px 20px 56px 20px;
@@ -176,7 +188,7 @@ body {
     max-width: 305px;
 }
 
-.catalog_href{
+.catalog_href {
     text-align: center;
     margin-top: 52px;
 }
@@ -360,6 +372,32 @@ body {
 }
 
 .burger {
+    display: none;
+}
+
+/* Удаление стрелок */
+select.select_item {
+    appearance: none;
+    /* Добавление замены для стрелок */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;;
+    padding-right: 40px; /* добавление отступа после текста */
+}
+
+/* Стилизация выделенного пункта */
+select.select_item option:checked {
+    background-color: #e1e1e1;
+    color: black;
+}
+
+/* Стилизация невыбранных пунктов */
+select.select_item option:not(:checked) {
+    background-color: white;
+    color: black;
+}
+
+.select_block {
     display: none;
 }
 
